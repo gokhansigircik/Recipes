@@ -1,30 +1,29 @@
-# Recipe Manager
+# Recipes
 
-A Flask and MySQL recipe manager with user authentication, recipe creation, editing, detail pages, and dashboard views.
+Recipes is a Flask and MySQL application for managing recipe records behind authenticated user accounts.
 
-## Product story
+## Product problem
 
-Recipe Manager turns a familiar hospitality domain into a full stack CRUD app. It fits Gokhan's background because recipes, prep, and operational consistency are part of restaurant life, while the implementation demonstrates backend fundamentals.
+A recipe workflow is a clean way to show real backend fundamentals: users, records, validation, create and edit screens, dashboards, detail pages, and database backed ownership.
 
-## What it demonstrates
+## What it shows
 
 | Area | Evidence |
 | --- | --- |
-| Authentication | Registration, login, bcrypt password hashing, sessions, and dashboard access. |
-| CRUD workflow | Create, read, update, and view recipe records. |
-| MVC structure | Controllers, models, templates, static styles, and shared app config. |
-| Database integration | MySQL connection layer and model level queries. |
+| Authentication | Registration, login, bcrypt password hashing, sessions, and protected dashboard access. |
+| CRUD workflow | Recipe creation, recipe editing, detail views, and user linked records. |
+| MVC structure | Controllers, models, templates, static assets, app config, and database connection code. |
+| Hospitality domain fit | Recipes connect naturally to Gokhan's operations background while still proving backend execution. |
 
 ## Stack
 
-Python, Flask, Jinja, MySQL, PyMySQL, Flask Bcrypt, HTML, CSS.
+Python, Flask, Jinja2, MySQL, PyMySQL, Flask Bcrypt, HTML, CSS.
 
 ## Run locally
 
-1. Install dependencies with Pipenv.
-2. Create a MySQL database named `recipes_schema_db`.
-3. Copy `.env.example` to `.env` and update the values.
-4. Start the app.
+1. Create a MySQL database named `recipes_schema_db`.
+2. Copy `.env.example` to `.env` and update the values.
+3. Install dependencies and start the app.
 
 ```bash
 pipenv install
@@ -42,10 +41,6 @@ python server.py
 | `MYSQL_PASSWORD` | Database password. |
 | `MYSQL_DB` | Database name. |
 
-## Next improvements
+## Hiring signal
 
-1. Add recipe categories and prep time filters.
-2. Add screenshots of the recipe dashboard and detail page.
-3. Add form validation tests.
-4. Add schema and seed data for demo review.
-5. Add deployment notes for a small Flask host.
+This repo is a simple, reviewable proof of backend fundamentals: authentication, session state, form handling, data models, controller routes, and template based UI.
